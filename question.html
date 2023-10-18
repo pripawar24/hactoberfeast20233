@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <link rel="stylesheet" href="questionstyle.css">
+      <script src="app.js"></script>
+      <style>
+        body {
+            background-color: #333;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        #questionBox {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        input[type="radio"] + span {
+            display: inline-block;
+            background-color: #444;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        input[type="radio"]:checked + span {
+            background-color: #2ecc71; /* Change to green when selected */
+        }
+
+        #submit {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        #submit:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+    </style>
+     
+    </head>
+    <body>
+    <table>
+<tr>
+    <td class="tdsquare">
+        <h1 style="font-size: 45px;">7 Crore</h1>
+        <h1 style="color: white;">1 Crore</h1>
+        <h1>5000000</h1>
+        <h1>2500000</h1>
+        <h1>1250000</h1>
+        <h1>640000</h1>
+        <h1 style="color: white;">320000</h1>
+        <h1>160000</h1>
+        <h1>80000</h1>
+        <h1>40000</h1>
+        <h1>20000</h1>
+        <h1 style="color: white;">10000</h1>
+        <h1>5000</h1>
+        <h1>3000</h1>
+        <h1>2000</h1>
+        <h1>1000</h1>
+
+    </td>
+
+<td>
+    <image class = "kbc" id="logoimg" src="images/lo.jpg"></image>
+
+    <div class="container">
+        <div id="questionBox"></div>
+        <form id="quizForm">
+            <label>
+                <input type="radio" name="answer" value="a">
+                <span id="optionA"></span>
+            </label>
+            <label>
+                <input type="radio" name="answer" value="b">
+                <span id="optionB"></span>
+            </label>
+            <label>
+                <input type="radio" name="answer" value="c">
+                <span id="optionC"></span>
+            </label>
+            <label>
+                <input type="radio" name="answer" value="d">
+                <span id="optionD"></span>
+            </label>
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+
+</td>
+
+
+</tr>
+
+    </table>
+    </body>
+</html>
